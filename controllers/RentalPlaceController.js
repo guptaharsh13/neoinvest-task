@@ -60,7 +60,7 @@ const search = (req, res) => {
       where: {
         startDate: { [Op.lte]: correctDate(startDate) },
         endDate: { [Op.gte]: correctDate(endDate) },
-        guests: { [Op.lte]: guests },
+        guests: { [Op.gte]: guests },
       },
     })
       .then((rentalPlaces) => {

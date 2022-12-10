@@ -58,7 +58,6 @@ const register = (req, res) => {
                 });
                 res.json({
                   message: "User registered successfully",
-                  userId: user.id,
                   accessToken,
                 });
               })
